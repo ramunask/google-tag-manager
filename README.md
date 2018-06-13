@@ -35,3 +35,14 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+# Generate on PC
+
+```bash
+docker run --rm ^
+  -v "%cd%:/srv/jekyll" ^
+  -p 35729:35729 -p 4000:4000 ^
+  -it jekyll/builder:latest ^
+  jekyll build
+```
