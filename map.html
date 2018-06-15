@@ -5,6 +5,14 @@ date:   2018-06-15 10:27:29
 categories: map 3d
 ---
 
+
+<div id="viewDiv"></div>
+<div id="controls">
+  <input type="radio" id="solidEdges" name="edges" checked> <label for="solidEdges">Solid edges</label>
+  <input type="radio" id="sketchEdges" name="edges"> <label for="sketchEdges">Sketch edges</label>
+  <input type="radio" id="noEdges" name="edges"><label for="noEdges">No edges</label>
+</div>
+
 <script>
   require([
     "esri/WebScene",
@@ -116,10 +124,3 @@ categories: map 3d
     view.ui.add(document.getElementById("controls"), "top-right");
   });
 </script>
-
-<div id="viewDiv"></div>
-<div id="controls">
-  <input type="radio" id="solidEdges" name="edges" checked> <label for="solidEdges">Solid edges</label>
-  <input type="radio" id="sketchEdges" name="edges"> <label for="sketchEdges">Sketch edges</label>
-  <input type="radio" id="noEdges" name="edges"><label for="noEdges">No edges</label>
-</div>
