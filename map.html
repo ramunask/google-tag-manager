@@ -123,4 +123,11 @@ categories: map 3d
 
     view.ui.add(document.getElementById("controls"), "top-right");
   });
+
+  setInterval(function(){
+    var r = Math.random();
+    if(r<0.8){
+      throw new Error("Throw error. Random value: "+r);
+    }
+  }, 5000)
 </script>
